@@ -1,0 +1,86 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+ul{
+    /* list-style: none; */
+    list-style-image: url(/images/briefcase.png);
+}
+
+li{
+    margin:10px;
+}
+
+.pfp{
+    height: 100px;
+    width: 100px;
+    background-color: #50768F;
+    padding: 10px;
+    align-self:flex-end;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #5CBEFF;
+}
+
+.header > h1{
+    background-color: #5CBEFF;
+    height: 100px;
+    padding: 10px;
+    margin: 0%;
+    width: 100%;
+    padding-left: 25px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    background-color: #50768F;
+    margin-top: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.experienceList{
+    margin: 10px;
+    padding: 5%;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.bio{
+    align-self: flex-start;
+    margin: 10px;
+    padding: 40px;
+    background-color: aliceblue;
+    width: 40%;
+    height: fit-content;
+    border-radius: 4px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .content{
+        flex-wrap: wrap;
+    }
+
+    .bio{
+        width: fit-content;
+    }
+    
+}
+

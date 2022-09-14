@@ -1,5 +1,5 @@
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: aliceblue;
 }
 
@@ -18,47 +18,57 @@ ul{
     list-style-image: url(/images/briefcase.png);
 }
 
-li{
-    margin:10px;
-}
 
 .pfp{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     background-color: #50768F;
     padding: 10px;
-    align-self:flex-end;
+    /* align-self:flex-end; */
 }
 
 .header{
     display: flex;
     flex-direction: row;
-    background-color: #5CBEFF;
+    background-color: aliceblue;
 }
 
 .header > h1{
-    background-color: #5CBEFF;
-    height: 100px;
-    padding: 10px;
-    margin: 0%;
-    width: 100%;
-    padding-left: 25px;
+    background-color: aliceblue;
+    padding-left: 10px;
+    /* padding: 25px; */
+    font-size: 250%;
+    align-self: center;
+    width: 307px;
 }
 
 .content{
     display: flex;
     flex-direction: row;
     background-color: #50768F;
-    margin-top: 20px;
-    margin: 10px;
-    border-radius: 5px;
+    /* margin: 10px; */
+    /* border-radius: 5px; */
 }
 
 .experienceList{
     margin: 10px;
     padding: 5%;
     background-color: aliceblue;
-    border-radius: 4px;
+    /* border-radius: 4px; */
+    width: 70%;
+}
+
+h3{
+    color: #29a2f3f8;
+}
+
+
+ h1{
+    color: #5CBEFF;
+}
+
+ h2{
+    color: #29a2f3f8;
 }
 
 .bio{
@@ -66,9 +76,37 @@ li{
     margin: 10px;
     padding: 40px;
     background-color: aliceblue;
-    width: 40%;
+    width: 545px;
     height: fit-content;
-    border-radius: 4px;
+    /* border-radius: 4px; */
+}
+
+.menuButton{
+    border-radius: 0px;
+    background-color: #50768F;
+    -webkit-transition: background-color .6s;
+    flex-grow: 2;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.menuButton:hover{
+    background-color: aliceblue;
+    border-color: none;
+    cursor: pointer;
+}
+
+.menuButton > img{
+    height: 100px;
+    width: 100px;
+    margin: 8px;
+}
+
+#icon{
+
 }
 
 
@@ -82,5 +120,24 @@ li{
         width: fit-content;
     }
     
+    .header{
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: #50768F;
+    }
+
+    .header > h1{
+        background-color: #50768F;
+    }
+
+    .pfp{
+        align-self: center;
+    }
+    
+    .menuButton{
+        padding: 0;
+    }
 }
 

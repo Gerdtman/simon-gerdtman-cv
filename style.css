@@ -176,7 +176,7 @@ h2 {
 }
 
 .portfolioImg{
-    height: auto;
+    height: 78px;
     width: 160px;
     margin: 10px;
 }
@@ -219,6 +219,14 @@ h2 {
     .contentBox {
         width: unset;
     }
+        
+    #bio {
+        width: unset;
+    }
+        
+    #experienceMeters {
+        width: unset;
+        }
 
     .header {
         flex-wrap: wrap;

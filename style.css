@@ -1,126 +1,231 @@
-html{
+html {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: aliceblue;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.icon{
+.icon {
     width: 20px;
     height: 20px;
 }
 
-ul{
-    /* list-style: none; */
+ul {
     list-style-image: url(/images/briefcase.png);
 }
 
 
-.pfp{
+.pfp {
     height: 200px;
     width: 200px;
     background-color: #50768F;
     padding: 10px;
-    /* align-self:flex-end; */
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     background-color: aliceblue;
 }
 
-.header > h1{
+.header>h1 {
     background-color: aliceblue;
     padding-left: 10px;
-    /* padding: 25px; */
     font-size: 250%;
     align-self: center;
+    text-align: center;
     width: 307px;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
     background-color: #50768F;
-    /* margin: 10px; */
-    /* border-radius: 5px; */
+    flex-wrap: wrap;
+    width: fit-content;
 }
 
-.experienceList{
-    margin: 10px;
-    padding: 5%;
-    background-color: aliceblue;
-    /* border-radius: 4px; */
-    width: 70%;
-}
-
-h3{
-    color: #29a2f3f8;
-}
-
-
- h1{
-    color: #5CBEFF;
-}
-
- h2{
-    color: #29a2f3f8;
-}
-
-.bio{
-    align-self: flex-start;
+.contentBox {
     margin: 10px;
     padding: 40px;
     background-color: aliceblue;
-    width: 545px;
-    height: fit-content;
-    /* border-radius: 4px; */
 }
 
-.menuButton{
+#experienceList {
+    width: 55%;
+    width: fit-content;
+}
+
+h3 {
+    color: #29a2f3f8;
+}
+
+
+h1 {
+    color: #5CBEFF;
+}
+
+h2 {
+    color: #29a2f3f8;
+}
+
+#bio {
+    width: 445px;
+}
+
+.menuButton {
     border-radius: 0px;
     background-color: #50768F;
     -webkit-transition: background-color .6s;
+    transition: background-color .6;
     flex-grow: 2;
     padding-top: 52px;
     padding-bottom: 52px;
     justify-content: center;
     display: flex;
-    
+
 }
 
-.menuButton:hover{
+.menuButton:hover {
     background-color: aliceblue;
     border-color: none;
     cursor: pointer;
 }
 
-.menuButton > img{
+.menuButton>img {
     height: 100px;
     width: 100px;
     margin: 8px;
 }
 
-#icon{
+#experienceMeters {
+    width: 445px;
+}
 
+#experienceMeters>ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.meter {
+    width: 100px;
+    height: 10px;
+    background-color: gray;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#experienceMeters>ul>li {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.meterBar {
+    width: 22px;
+    height: 6px;
+    background-color: #5CBEFF;
+    z-index: 3;
+    border: #2c4250;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.meterBarGray {
+    width: 22px;
+    height: 6px;
+    z-index: 3;
+    border: #2c4250;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.languageIcon {
+    height: 30px;
+    width: 30px;
+}
+
+#portfolioBox{
+    height: 593px;
+    width: 1100px;
+    overflow-y: scroll;
+}
+
+#gitLogo > a > img {
+    opacity: 0.2;
+    height: 100px;
+    width: auto;
+}
+
+.portfolioContent {
+    display: flex;
+    border-bottom: #2c4250;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    min-height: 100px;
+
+}
+
+.portfolioImg{
+    height: auto;
+    width: 160px;
+    margin: 10px;
+}
+
+.portfolioText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.portfolioText > h3 {
+    margin-bottom: 0;
+}
+
+.portfolioLinks{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.portfolioLinks > a {
+    margin: 5px;
+    flex-grow: 2;
+}
+
+.portfolioLinks > a > img {
+    height: 30px;
+    width: auto;
+    opacity: 0.4;
 }
 
 
 
-@media only screen and (max-width: 600px){
-    .content{
+
+@media only screen and (max-width: 600px) {
+    .content {
         flex-wrap: wrap;
     }
 
-    .bio{
-        width: fit-content;
+    .contentBox {
+        width: unset;
     }
-    
-    .header{
+
+    .header {
         flex-wrap: wrap;
         flex-direction: column;
         text-align: center;
@@ -128,16 +233,28 @@ h3{
         background-color: #50768F;
     }
 
-    .header > h1{
-        background-color: #50768F;
-    }
-
-    .pfp{
+    .pfp {
         align-self: center;
     }
-    
-    .menuButton{
+
+    .menuButton {
         padding: 0;
     }
-}
 
+    .portfolioContent {
+        flex-direction: column;
+    }
+
+    #portfolioBox {
+        width: unset;
+    }
+
+    .portfolioLinks {
+        flex-direction: row;
+    }
+
+    .portfolioLinks > a {
+        flex-grow: unset;
+    }
+
+}

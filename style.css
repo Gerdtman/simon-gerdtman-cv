@@ -218,7 +218,14 @@ h2 {
 
     .contentBox {
         width: unset;
+        
+    #bio {
+        width: unset;
     }
+        
+    #experienceMeters {
+        width: unset;
+        }
 
     .header {
         flex-wrap: wrap;
